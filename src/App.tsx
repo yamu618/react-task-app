@@ -3,6 +3,7 @@ import HomePage from './pages/home/index.tsx';
 import TaskListPage from "./pages/tasks/taskListPage.tsx";
 import TaskDetailPage from "./pages/tasks/taskDetailPage.tsx";
 import TaskCreatePage from "./pages/tasks/taskCreatePage.tsx";
+import TaskEditPage from "./pages/tasks/taskEditPage.tsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/tasks" element={<TaskListPage />} />
       <Route path="/tasks/:id" element={<TaskDetailPage />} />
       <Route path="/tasks/new" element={<TaskCreatePage />} />
+      <Route path="/tasks/:id/edit" element={<TaskEditPage />} />
     </Routes>
   );
 }
